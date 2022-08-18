@@ -73,3 +73,6 @@ const page = (
     </div>
 )
 ```
+
+### third lesson notes:
+- instead of using a variable to store the component, the best practice is to use the functions (a function for each component) with pascalCase (by make the furst letter an upper case, for ex: TemplateForDesign) rather than cammelCase (just make the first letter for each word except for the first one an upper case, for ex: templateForDesign)
