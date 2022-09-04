@@ -1,0 +1,21 @@
+.intro{
+    margin-left: 36px;
+}
+.intro h1{
+    width: 347px;
+    height: 40px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 110%;
+    color: #000000;
+}
+.intro p{
+    width: 320px;
+    height: 56px;
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 110%;
+    color: #222222;
+}

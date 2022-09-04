@@ -1,0 +1,10 @@
+.card-body{
+    position: relative;
+    width: 317px;
+    height: 780px;
+    margin: 50px auto;
+    background: #1A1B21;
+    color: white;
+    font-family: 'Inter';
+    border-radius: 10px;
+}

@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# learn-react
+## how to run react 
+1. first way to include react in a project (easiest way) is by [CDN](https://reactjs.org/docs/cdn-links.html) copy the script tags and paste it inside the head tag
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+    then you have to enable writing [JSX](https://reactjs.org/docs/add-react-to-a-website.html#quickly-try-jsx) in your react project by copy the script tag and paste it inside head tag also. 
+    > Now you can use JSX in any `<script>` tag by adding type="text/babel" attribute to it. 
 
-## Available Scripts
+    this note is important:
+    ```
+    <script src="script.js" type="text/babel">
+    ```
+2. by run it as react project
+```
+npx create-react-app my-app
+cd my-app
+npm start
+```
+or u can do the following
+1. create a local directory 
+2. link it with GitHub repos(optional)
+3. type in terminal: 
+```
+npx create-react-app .
+npm start
+```
+## why react
+1. enable u to create a composable code. which means rather than create a long code u divide it into small pieces of code then gather them together to do the same thing that long code did.
+2. it is declarative. (tell me what should I do, and I'll worry about how I get it done).
+3. it is a hirable skill
+4. it is actively maintained by skilled people.
 
-In the project directory, you can run:
+### first lesson notes:
+so in react we type JavaScript lines included with html tags and then it's render in the browser!!!
 
-### `npm start`
+- html inside JS??: no it is not html it is JSX.
+- `ReactDOM.render(<p>first lesson</p>, document.getElementById("root"))` this line is the first gate to render the sites. its like append a JSX to the selected container.
+    - ReactDOM: is a react class (build-in component from react Dom library) 
+    - render(): build in method like print in the browser screen and it has 2 parameters
+        - first one is the JSX tags
+        - second one is the container id that will hold the JSX tags.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### second lesson notes:
+- if u console an element that created by normal DOM it will print (for example)
+```
+const h1 = document.createElement("h1")
+h1.textContent = "Hello world"
+h1.className = "header"
+console.log(h1) // <h1 class="header">
+```
+- but react JSX will print (for example)
+```
+const element = <h1 className="header">This is JSX</h1>
+console.log(element)
+/* 
+{
+    type: "h1", 
+    key: null, 
+    ref: null, 
+    props: {className: "header", children: "This is JSX"}, 
+    _owner: null, 
+    _store: {}
+}
+*/
+```
+- in JSX we have to make sure we return just one element, if we need to return multiple elements just include them inside one div tag or any parent tag.
+- if u want to make the JSX inside a variable:
+```
+const page = (
+    <div>
+        <h1> something1 </h1>
+        <p> something2 </p>
+        <h3> something3 </h3>
+    </div>
+)
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### third lesson notes:
+- instead of using a variable to store the component, the best practice is to use the functions (a function for each component) with pascalCase (by make the first letter an upper case, for ex: TemplateForDesign) rather than camelCase (just make the first letter for each word except for the first one an upper case, for ex: templateForDesign)
