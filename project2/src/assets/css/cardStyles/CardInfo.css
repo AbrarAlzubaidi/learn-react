@@ -1,0 +1,63 @@
+.card-img img{
+    width: 100%;
+    height: 317px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.theme-toggle{
+    color: yellow;
+}
+.card-info h1{
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 21px ;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.card-info .position{
+    font-weight: 400;
+    font-size: 12.8px;
+    margin-top: 6.19px;
+    margin-bottom: 0px;
+    text-align: center;
+    color: #F3BF99;
+}
+.card-info .email{
+    font-weight: 400;
+    font-size: 10.24px;
+    margin-top: 8.81px;
+    text-align: center;
+    color: #F5F5F5;
+}
+.card-info .buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 13px 9px 11px;
+    gap: 15px;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0px 35px;
+}
+.card-info .buttons .email-btn{
+    background: #FFFFFF;
+    width: 115px;
+    padding: 10px;
+    border: 1px solid #D1D5DB;
+    text-decoration: none; 
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    text-align: center;
+    color: black;
+}
+.card-info .buttons .linkedin-btn{
+    background: #5093E2;
+    width: 115px;
+    padding: 10px;
+    text-decoration: none; 
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    text-align: center;
+    color: white;
+}

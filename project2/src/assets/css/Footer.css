@@ -1,0 +1,10 @@
+.footer{
+    background-color: cadetblue;
+    width: 100%;
+    height: 40px;
+    bottom: 0;
+}
+.footer p{
+    text-align: center;
+    padding: 5px 2px;   
+}

@@ -1,0 +1,19 @@
+.card-about{
+    width: 247px;
+    height: 201px; 
+    margin: auto;
+}
+.card-about h1{
+    width: 242.71px;
+    height: 21px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+}
+.card-about p{
+    width: 247px;
+    height: 61px;
+    font-weight: 400;
+    font-size: 10.24px;
+    line-height: 150%;
+}

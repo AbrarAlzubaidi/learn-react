@@ -1,0 +1,67 @@
+.card{
+    margin-top: 15px;
+    margin-bottom: 100px;
+}
+.card-container{
+    width: 176px;
+
+}
+.card .card-img{
+    position: relative;
+}
+.card .card-img img{
+    width: 176px;
+    height: 235px;
+    border-radius: 9px;
+    object-fit: cover;
+    margin-bottom: 0px;
+}
+.card .card-img button{
+    position: absolute;
+    height: 20px;
+    top:6px;
+    left: 6px;
+    border: none;
+    border-radius: 2px;
+    font-size: 10px;
+    width: 64px;
+    /* color: white; */
+    background-color: white;
+}
+.card .card-img .online-btn{
+    background-color: green;
+}
+.card .card-img .sold-btn{
+    background-color: red;
+}
+.card-content{
+    width: 176px;
+    height: 58px;
+}
+.card-content .rate{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    height: 20px;
+    align-items: center;
+}
+.card-content .rate img{
+    display: block;
+    width: 14px;
+    height: 14px; 
+}
+.card-content .rate p{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px; 
+    margin: 0px;
+}
+.card .card-container .card-content .title{
+    margin: 0px;
+    font-weight: 300;
+    font-size: 12px;
+}
+.card .card-container .card-content .cost{
+    font-weight: 600;
+    font-size: 12px;
+}

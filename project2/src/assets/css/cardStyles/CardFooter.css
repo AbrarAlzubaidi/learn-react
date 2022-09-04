@@ -1,0 +1,17 @@
+.card-footer{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 23.5px;
+    width: 317px;
+    height: 64px;
+    background: #161619;
+    border-radius: 0px 0px 10px 10px;
+}
+.card-footer .icon{
+    color: #918E9B;
+    font-size: 25px;
+}
