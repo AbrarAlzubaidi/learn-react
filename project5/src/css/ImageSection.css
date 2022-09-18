@@ -1,0 +1,10 @@
+.meme{
+    height: 500px;
+    width: 500px;
+    margin: auto;
+}
+.meme img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

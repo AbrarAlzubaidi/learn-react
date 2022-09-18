@@ -1,0 +1,33 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 19px 20px;
+    height: 64.22px;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+}
+.logo{
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    align-items: center;
+}
+.logo h1{
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 24px;
+    letter-spacing: -0.1em;
+    color: #FFFFFF;
+}
+.logo img{
+    width: 43px;
+    height: 40px;
+}
+header p{
+    width: 189px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 15px;
+    color: #FFFFFF;
+    text-align: right;
+}
