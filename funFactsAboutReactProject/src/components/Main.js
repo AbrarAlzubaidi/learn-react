@@ -1,12 +1,12 @@
 import React from "react";
 import Header from "./Header";
 import List from './List';
-function Main(){
+function Main(props){
     return (
-        <div className="main">
-            <Header/>
-            <List/>
-        </div>
+        <main className={props.lightMode ? "light" : ""}>
+            <Header />
+            <List />
+        </main>
     )
 }
 export default Main

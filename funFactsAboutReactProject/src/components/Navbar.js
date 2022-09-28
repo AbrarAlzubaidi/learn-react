@@ -1,13 +1,20 @@
-const Navbar = () => {
+const Navbar = (props) => {
     return (
-        <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <div class="logo">
-                <a class="navbar-brand" href="#"><i class="fa-brands fa-react"></i>ReactFacts</a>
+        <nav className={props.lightMode ? "light" : ""}>
+        <div className="container-fluid">
+            <div className="logo">
+                <a className="navbar-brand" href="/"><i class="fa-brands fa-react"></i>ReactFacts</a>
             </div>
-                <div class="navbar-nav">
-                    <p class="project">React Course - Project 1</p>
-                </div>
+                {/* <div className="navbar-nav">
+                    <p className="project">React Course - Project 1</p>
+                </div> */}
+        </div>
+        <div className="toggler">
+            <p className="toggler-dark">Dark</p>
+            <div className="toggler-slider" onClick={props.toggleLightMode}>
+                <div className="toggler-slider-circle"></div>
+            </div>
+            <p className="toggler-light">Light</p>
         </div>
     </nav>
     );

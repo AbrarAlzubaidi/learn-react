@@ -4,59 +4,124 @@ body{
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
   width: 100%;
-  height: 100vh;
 }
-.navbar{
+
+/* navbar style */
+nav{
   width: 100%;
   height: 91px;
-  left: 0px;
-  top: 0px;
-  background-color: #21222A !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0e0e14;;
+  box-shadow: 5px 10px #888888;
 }
+
+nav.light{
+  background-color: #f3f0f0;
+}
+
 .navbar-brand{
-  color: #61DAFB !important;
+  color: #61DAFB;
   font-weight: 600;
+  font-size: 20px;
 }
+
 .fa-brands{
   width: 28.93px;
   height: 28.93px;
-  left: 26px;
-  top: 31px;
-  font-size: 25px;
-  margin-right: 6.68px;
+  font-size: 26px;
+  margin-right: 3px;
 }
-.project{
-  color: #DEEBF8 !important;
-  width: 259px;
-  height: 21px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  justify-content: center;
+
+.toggler{
+  display: flex;
+  flex-direction: row;
+  align-items:stretch;
+  margin-right: 15px;
+  padding: 2px;
 }
-.main{
+
+.toggler p{
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.toggler-slider{
+  width: 25px;
+  height: 13px;
+  background-color: #F5F5F5;
+  border-radius: 2rem;
+  margin-inline: 7px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid white;
+  box-sizing: content-box;
+}
+
+nav.light .toggler-slider{
+  border-color: black;
+  background-color: #21222A;
+}
+
+.toggler-slider-circle{
+  height: 13px;
+  width: 13px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+nav.light .toggler-slider-circle{
+  background-color: white;
+}
+
+.toggler-dark{
+  color: #D5D4D8
+}
+
+nav.light .toggler-dark{
+  color: #918E9B;
+}
+
+.toggler-light{
+  color: #7c7b7e;
+}
+
+nav.light .toggler-light{
+  color: #000000;
+}
+
+nav.light .toggler-slider{
+  justify-content: flex-end;
+}
+/* main */
+main{
     background-image: url("https://cdn-icons-png.flaticon.com/512/919/919851.png");
-    /* filter: contrast(200%); */
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
     background-position: calc(80%) calc(0%) ;
-  }
-  #root{
-  color: white;
-  background-color: #282d35 !important;
+    background-color: #21222A;
+    color: white;
 }
+
+main.light{
+  background-color: white;
+  color: black
+}
+
 .title{
-  width: 424px;
-  height: 41px;
   padding-left: 27px;
-  margin-top: 57px;
+  padding-top: 57px;
   font-style: normal;
   font-weight: 600;
   font-size: 39.06px;
   line-height: 47px;
   letter-spacing: -0.05em;
 }
+
 .list{
   width: 390px;
   height: 190px;
@@ -64,6 +129,7 @@ body{
   margin-top: 46px;
   list-style: none; 
 }
+
 .point{
   width: 390px;
   height: 17.81px;
@@ -72,6 +138,7 @@ body{
   font-size: 16px;
   margin-bottom: 19px;
 }
+
 .point::before{
   content: "\2022";  
   color: #61DAFB;

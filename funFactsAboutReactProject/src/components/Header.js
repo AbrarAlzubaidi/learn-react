@@ -1,6 +1,6 @@
 const Header = () => {
     return (
-        <div>
+        <div >
             <h1 class="title">Fun facts about React</h1>
         </div>
     )
